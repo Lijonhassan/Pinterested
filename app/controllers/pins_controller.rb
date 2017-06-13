@@ -58,7 +58,7 @@ class PinsController < ApplicationController
   def destroy
     @pin.destroy
     respond_to do |format|
-      format.html { redirect_to pins_url, notice: 'Destroyed Pin!' }
+      format.html { redirect_to pins_url, notice: 'Pin Destroyed!' }
       format.json { head :no_content }
     end
   end
